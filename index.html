@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iTunes App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>iTunesApp</h1></header>
+    <main>
+      <div class="loader-container">
+        <div class="load-screen">
+          <div class="loader"></div>
+          <div class="loading-message">Please wait while data is loading!</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="search">
+          <div class="inputFieldCont">
+            <input
+              type="text"
+              id="input-field"
+              placeholder="Type here prefered song or artist..."
+            />
+          </div>
+          <div class="buttonField">
+            <button type="button" id="search-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="results">
+          <table id="iTunesTable">
+            <tr>
+              <th class="flex-item-1">Pjesma</th>
+              <th class="flex-item-2">Izvođač</th>
+              <th class="flex-item-3">Reproduciraj</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

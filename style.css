@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(204, 204, 254);
+}
+header {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container {
+  margin: auto;
+  width: 70%;
+  max-width: 1200px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.inputFieldCont {
+  flex-basis: 70%;
+}
+
+.inputFieldCont > input {
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.buttonField {
+  flex-basis: 30%;
+}
+
+.buttonField > button {
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
+  margin-left: 40%;
+  background-color: rgb(136, 136, 255);
+}
+
+.buttonField > button:hover {
+  background-color: rgb(231, 231, 252);
+}
+
+table {
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+}
+th {
+  font-weight: 700;
+}
+
+table tr {
+  height: 70px;
+  display: flex;
+  transform: skew(15deg);
+  align-items: center;
+  margin-top: 10px;
+}
+table tr:hover {
+  box-shadow: 5px 5px 10px 10px rgb(251, 251, 255);
+}
+table tr:nth-child(1):hover {
+  box-shadow: none;
+}
+table tr > * {
+  transform: skew(-15deg);
+}
+
+.flex-item-1 {
+  flex-basis: 30%;
+  padding-left: 10px;
+}
+.flex-item-2 {
+  flex-basis: 40%;
+  padding: 0 10px;
+}
+.flex-item-3 {
+  flex-basis: 30%;
+  padding-right: 15px;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgb(136, 136, 255);
+}
+
+table tr:nth-child(even) {
+  background-color: rgb(231, 231, 252);
+}
+
+.playDemoBtn {
+  border: none;
+  background-color: transparent;
+}
+
+/* //Loader */
+.loader-container {
+  position: relative;
+}
+.load-screen {
+  background-color: rgb(252, 252, 252, 0.5);
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0px 0px 15px rgb(252, 252, 252);
+  display: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+.loading-message {
+  font-size: 24px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.display-loader {
+  display: block;
+}
